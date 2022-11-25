@@ -60,13 +60,15 @@
         <nav :class="{'flex': open, 'hidden': !open}"
           class="justify-center flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex lg:justify-end lg:flex-row lg:items-center px-6">
           <a class="transition duration-300 ease-in-out mr-4 pb-1.5 border-b-2 border-indigo-700 py-2 text-base font-bold text-gray-900 md:mt-0"
-            href="#top">Beranda</a>
-          <a class="transition duration-300 ease-in-out mr-4 pb-1.5 border-b-2 border-transparent hover:border-indigo-700 hover:font-bold hover:text-gray-900 py-2 text-base md:mt-0 md:ml-4 focus:text-gray-900"
-            href="#skill">Kurikulum</a>
-          <a class="transition duration-300 ease-in-out mr-4 pb-1.5 border-b-2 border-transparent hover:border-indigo-700 hover:font-bold hover:text-gray-900 py-2 text-base md:mt-0 md:ml-4 focus:text-gray-900"
-            href="#kompetensi">Kompetensi Kelulusan</a>
-          <a class="transition duration-300 ease-in-out mr-8 mb-2 lg:mb-0 pb-1.5 border-b-2 border-transparent hover:border-indigo-700 hover:font-bold hover:text-gray-900 py-2 text-base md:mt-0 md:ml-4 focus:text-gray-900"
-            href="#beasiswa">Beasiswa</a>
+            href="index.html#top">Beranda</a>
+          <a class="transition duration-300 ease-in-out mr-4 pb-1.5 border-b-2 border-transparent hover:border-indigo-700 hover:text-gray-900 py-2 text-base md:mt-0 md:ml-4 focus:text-gray-900"
+            href="index.html#skill">Kurikulum</a>
+          <a class="transition duration-300 ease-in-out mr-4 pb-1.5 border-b-2 border-transparent hover:border-indigo-700 hover:text-gray-900 py-2 text-base md:mt-0 md:ml-4 focus:text-gray-900"
+            href="index.html#pengajar">Pengajar</a>
+          <a class="transition duration-300 ease-in-out mr-4 pb-1.5 border-b-2 border-transparent hover:border-indigo-700 hover:text-gray-900 py-2 text-base md:mt-0 md:ml-4 focus:text-gray-900"
+            href="index.html#kompetensi">Kompetensi Kelulusan</a>
+          <a class="transition duration-300 ease-in-out mr-8 mb-2 lg:mb-0 pb-1.5 border-b-2 border-transparent hover:border-indigo-700 hover:text-gray-900 py-2 text-base md:mt-0 md:ml-4 focus:text-gray-900"
+            href="index.html#beasiswa">Beasiswa</a>
           <div class="col-span-6 md:col-span-2 col-start-11 flex">
             <a href="https://penerimaan.undiksha.ac.id/ujian-tulis" target="_blank"
               class="button py-3 px-6 rounded-xl text-center capitalize bg-indigo-700 hover:bg-indigo-500 text-white font-bold flex-grow transition duration-300 ease-in-out">
@@ -330,7 +332,7 @@
     </section>
 
     <!-- KOMPETENSI LULUSAN -->
-    <section id="kompetensi" class="pt-24 px-12 lg:px-24 max-w-screen-xl mx-auto lg:grid lg:grid-cols-12 gap-12">
+    <section id="kompetensi" class="mb-28 pt-24 px-12 lg:px-24 max-w-screen-xl mx-auto lg:grid lg:grid-cols-12 gap-12">
       <div class="col-span-12 text-center ">
         <h2 class="text-2xl font-bold text-indigo-800 mb-5">Kompetensi <span class="text-orange">Lulusan</span></h2>
         <p class="font-thin text-gray-600 leading-loose">Lulusan Sarjana Terapan TRPL sangat spesifik dan berorientasi
@@ -390,8 +392,8 @@
     </section>
 
     <!-- SKILL PATH -->
-    <section id="skill" class="pt-24 m-12">
-      <div class="bg-purple py-12 max-w-screen-xl mx-auto lg:grid grid gap-2 lg:grid-cols-12 rounded-2xl px-6 lg:px-12 lg:gap-12">
+    <section id="skill" class="m-12 py-12 bg-purple rounded-2xl px-6 max-w-screen-xl lg:mx-auto">
+      <div class="max-w-screen-xl mx-auto lg:grid grid gap-2 lg:grid-cols-12 lg:px-12 lg:gap-12">
         <div class="col-span-12 text-center px-0 lg:px-24 mb-10">
           <h2 class="text-2xl font-bold text-white mb-5">Skill Path Kurikulum</h2>
           <p class="text-white font-thin text-base leading-loose">Adaptif terhadap perkembangan teknologi, kurikulum dirancang berstandar internasional
@@ -434,14 +436,243 @@
           </div>
           <p class="text-white row-span-1 text-center mt-2">Creative Technology</p>
         </div>
-
+      </div>
+      <div class="mt-10 text-center">
+        <button type="button" class="px-6 py-2 border border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+          <a href="kurikulum.html">Info Selengkapnya -></a>
+        </button>
       </div>
     </section>
 
     <!-- TENAGA PENGAJAR -->
-    <section id="trpl" class="pt-24 px-12 max-w-screen-xl mx-auto lg:grid grid-cols-12 gap-12">
-      <div class="col-span-12 lg:col-span-6 hover:scale-105 transition duration-300 ease-in-out">
-        <img src="dist/img/img-tenaga-pengajar.png" alt="">
+    <section id="pengajar" class="pt-24 px-12 max-w-screen-xl mx-auto lg:grid grid-cols-12 gap-12">
+      <div class="col-span-12 lg:col-span-6">
+        <img src="dist/img/img-tenaga-pengajar.png" class="hover:scale-105 transition duration-300 ease-in-out" alt="">
+        <!-- <div class="mt-10"></div> -->
+        <div class="grid grid-cols-6 mt-10"></div>
+        <div
+        class="swiper swiper-container h-20 swiper-coverflow swiper-3d swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress">
+        <div class="swiper-wrapper w-32 " id="swiper-wrapper-b3cbca7667f61ef2" aria-live="polite"
+          style="cursor: grab; transition-duration: 0ms; transform: translate3d(-1483.85px, 0px, 0px);">
+          <div class="swiper-slide rounded-2xl swiper-slide-duplicate swiper-slide-duplicate-active"
+            data-swiper-slide-index="0" role="group" aria-label="1 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -2625.07px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -25; margin-right: 40px;">
+            <img class="rounded-md" src="dist/img/mta.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 26.2507; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl swiper-slide-duplicate swiper-slide-duplicate-next"
+            data-swiper-slide-index="1" role="group" aria-label="2 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -2362.54px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -23; margin-right: 40px;">
+            <img class="rounded-md" src="dist/img/BNSP.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 23.6254; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="2" role="group"
+            aria-label="3 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -2100.01px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -20; margin-right: 40px;">
+            <img class="rounded-2xl" src="dist/img/mce.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 21.0001; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="3" role="group"
+            aria-label="4 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -1837.48px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -17; margin-right: 40px;">
+            <img class="rounded-md" src="dist/img/python.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 18.3748; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="4" role="group"
+            aria-label="5 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -1574.95px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -15; margin-right: 40px;">
+            <img class="rounded-md" src="dist/img/mtcre.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 15.7495; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="5" role="group"
+            aria-label="6 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -1312.42px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -12; margin-right: 40px;">
+            <img class="rounded-md" src="dist/img/ccna.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 13.1242; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="6" role="group"
+            aria-label="7 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -1049.9px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -9; margin-right: 40px;">
+            <img class="rounded-md" src="dist/img/aws.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 10.499; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="7" role="group"
+            aria-label="8 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -787.367px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -7; margin-right: 40px;">
+            <img class="rounded-2xl" src="dist/img/azure.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 7.87367; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="8" role="group"
+            aria-label="9 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -524.839px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -4; margin-right: 40px;">
+            <img class="rounded-2xl" src="dist/img/psd.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 5.24839; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl swiper-slide-duplicate swiper-slide-visible swiper-slide-prev"
+            data-swiper-slide-index="9" role="group" aria-label="10 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -262.31px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -2; margin-right: 40px;">
+            <img class="rounded-2xl" src="dist/img/mos.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 2.6231; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl swiper-slide-visible swiper-slide-active" data-swiper-slide-index="0"
+            role="group" aria-label="1 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -0.218774px) rotateX(0deg) rotateY(0deg) scale(1); z-index: 1; margin-right: 40px;">
+            <img class="rounded-md" src="dist/img/mta.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 0.00218774; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl swiper-slide-visible swiper-slide-next" data-swiper-slide-index="1"
+            role="group" aria-label="2 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -262.747px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -2; margin-right: 40px;">
+            <img class="rounded-md" src="dist/img/BNSP.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 2.62747; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl" data-swiper-slide-index="2" role="group" aria-label="3 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -525.276px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -4; margin-right: 40px;">
+            <img class="rounded-2xl" src="dist/img/mce.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 5.25276; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl" data-swiper-slide-index="3" role="group" aria-label="4 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -787.805px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -7; margin-right: 40px;">
+            <img class="rounded-md" src="dist/img/python.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 7.87805; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl" data-swiper-slide-index="4" role="group" aria-label="5 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -1050.33px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -10; margin-right: 40px;">
+            <img class="rounded-md" src="dist/img/mtcre.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 10.5033; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl" data-swiper-slide-index="5" role="group" aria-label="6 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -1312.86px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -12; margin-right: 40px;">
+            <img class="rounded-md" src="dist/img/ccna.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 13.1286; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl" data-swiper-slide-index="6" role="group" aria-label="7 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -1575.39px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -15; margin-right: 40px;">
+            <img class="rounded-md" src="dist/img/aws.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 15.7539; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl" data-swiper-slide-index="7" role="group" aria-label="8 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -1837.92px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -17; margin-right: 40px;">
+            <img class="rounded-2xl" src="dist/img/azure.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 18.3792; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl" data-swiper-slide-index="8" role="group" aria-label="9 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -2100.45px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -20; margin-right: 40px;">
+            <img class="rounded-2xl" src="dist/img/psd.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 21.0045; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl swiper-slide-duplicate-prev" data-swiper-slide-index="9" role="group"
+            aria-label="10 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -2362.98px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -23; margin-right: 40px;">
+            <img class="rounded-2xl" src="dist/img/mos.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 23.6298; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl swiper-slide-duplicate swiper-slide-duplicate-active"
+            data-swiper-slide-index="0" role="group" aria-label="1 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -2625.51px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -25; margin-right: 40px;">
+            <img class="rounded-md" src="dist/img/mta.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 26.2551; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl swiper-slide-duplicate swiper-slide-duplicate-next"
+            data-swiper-slide-index="1" role="group" aria-label="2 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -2888.03px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -28; margin-right: 40px;">
+            <img class="rounded-md" src="dist/img/BNSP.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 28.8803; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="2" role="group"
+            aria-label="3 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -3150.56px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -31; margin-right: 40px;">
+            <img class="rounded-2xl" src="dist/img/mce.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 31.5056; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="3" role="group"
+            aria-label="4 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -3413.09px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -33; margin-right: 40px;">
+            <img class="rounded-md" src="dist/img/python.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 34.1309; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="4" role="group"
+            aria-label="5 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -3675.62px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -36; margin-right: 40px;">
+            <img class="rounded-md" src="dist/img/mtcre.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 36.7562; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="5" role="group"
+            aria-label="6 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -3938.15px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -38; margin-right: 40px;">
+            <img class="rounded-md" src="dist/img/ccna.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 39.3815; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="6" role="group"
+            aria-label="7 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -4200.68px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -41; margin-right: 40px;">
+            <img class="rounded-md" src="dist/img/aws.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 42.0068; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="7" role="group"
+            aria-label="8 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -4463.21px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -44; margin-right: 40px;">
+            <img class="rounded-2xl" src="dist/img/azure.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 44.6321; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="8" role="group"
+            aria-label="9 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -4725.74px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -46; margin-right: 40px;">
+            <img class="rounded-2xl" src="dist/img/psd.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 47.2574; transition-duration: 0ms;"></div>
+          </div>
+          <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="9" role="group"
+            aria-label="10 / 10"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, -4988.26px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -49; margin-right: 40px;">
+            <img class="rounded-2xl" src="dist/img/mos.png" alt="">
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 49.8826; transition-duration: 0ms;"></div>
+          </div>
+        </div>
+        <div
+          class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+          <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
+            aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0"
+            role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0"
+            role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0"
+            role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0"
+            role="button" aria-label="Go to slide 5"></span><span class="swiper-pagination-bullet" tabindex="0"
+            role="button" aria-label="Go to slide 6"></span><span class="swiper-pagination-bullet" tabindex="0"
+            role="button" aria-label="Go to slide 7"></span><span class="swiper-pagination-bullet" tabindex="0"
+            role="button" aria-label="Go to slide 8"></span><span class="swiper-pagination-bullet" tabindex="0"
+            role="button" aria-label="Go to slide 9"></span><span class="swiper-pagination-bullet" tabindex="0"
+            role="button" aria-label="Go to slide 10"></span></div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+      </div>
       </div>
       <div class="col-span-12 md:col-span-6">
         <h1 class="text-2xl lg:text-3xl font-bold text-indigo-800 mt-6 lg:pr-12 text-center lg:text-start lg:mt-0">Didukung oleh tenaga Pengajar <span
@@ -465,238 +696,16 @@
               pemrograman, certified educator abad 21 berbasis digital, asesmen TIK, dan etika penelitian</p>
           </div>
         </div>
-        <div class="grid grid-cols-6 mt-10"></div>
-        <div
-          class="swiper swiper-container h-20 swiper-coverflow swiper-3d swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress">
-          <div class="swiper-wrapper w-32 " id="swiper-wrapper-b3cbca7667f61ef2" aria-live="polite"
-            style="cursor: grab; transition-duration: 0ms; transform: translate3d(-1483.85px, 0px, 0px);">
-            <div class="swiper-slide rounded-2xl swiper-slide-duplicate swiper-slide-duplicate-active"
-              data-swiper-slide-index="0" role="group" aria-label="1 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -2625.07px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -25; margin-right: 40px;">
-              <img class="rounded-md" src="dist/img/mta.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 26.2507; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl swiper-slide-duplicate swiper-slide-duplicate-next"
-              data-swiper-slide-index="1" role="group" aria-label="2 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -2362.54px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -23; margin-right: 40px;">
-              <img class="rounded-md" src="dist/img/BNSP.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 23.6254; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="2" role="group"
-              aria-label="3 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -2100.01px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -20; margin-right: 40px;">
-              <img class="rounded-2xl" src="dist/img/mce.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 21.0001; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="3" role="group"
-              aria-label="4 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -1837.48px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -17; margin-right: 40px;">
-              <img class="rounded-md" src="dist/img/python.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 18.3748; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="4" role="group"
-              aria-label="5 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -1574.95px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -15; margin-right: 40px;">
-              <img class="rounded-md" src="dist/img/mtcre.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 15.7495; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="5" role="group"
-              aria-label="6 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -1312.42px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -12; margin-right: 40px;">
-              <img class="rounded-md" src="dist/img/ccna.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 13.1242; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="6" role="group"
-              aria-label="7 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -1049.9px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -9; margin-right: 40px;">
-              <img class="rounded-md" src="dist/img/aws.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 10.499; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="7" role="group"
-              aria-label="8 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -787.367px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -7; margin-right: 40px;">
-              <img class="rounded-2xl" src="dist/img/azure.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 7.87367; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="8" role="group"
-              aria-label="9 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -524.839px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -4; margin-right: 40px;">
-              <img class="rounded-2xl" src="dist/img/psd.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 5.24839; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl swiper-slide-duplicate swiper-slide-visible swiper-slide-prev"
-              data-swiper-slide-index="9" role="group" aria-label="10 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -262.31px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -2; margin-right: 40px;">
-              <img class="rounded-2xl" src="dist/img/mos.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 2.6231; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl swiper-slide-visible swiper-slide-active" data-swiper-slide-index="0"
-              role="group" aria-label="1 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -0.218774px) rotateX(0deg) rotateY(0deg) scale(1); z-index: 1; margin-right: 40px;">
-              <img class="rounded-md" src="dist/img/mta.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 0.00218774; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl swiper-slide-visible swiper-slide-next" data-swiper-slide-index="1"
-              role="group" aria-label="2 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -262.747px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -2; margin-right: 40px;">
-              <img class="rounded-md" src="dist/img/BNSP.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 2.62747; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl" data-swiper-slide-index="2" role="group" aria-label="3 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -525.276px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -4; margin-right: 40px;">
-              <img class="rounded-2xl" src="dist/img/mce.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 5.25276; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl" data-swiper-slide-index="3" role="group" aria-label="4 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -787.805px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -7; margin-right: 40px;">
-              <img class="rounded-md" src="dist/img/python.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 7.87805; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl" data-swiper-slide-index="4" role="group" aria-label="5 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -1050.33px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -10; margin-right: 40px;">
-              <img class="rounded-md" src="dist/img/mtcre.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 10.5033; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl" data-swiper-slide-index="5" role="group" aria-label="6 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -1312.86px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -12; margin-right: 40px;">
-              <img class="rounded-md" src="dist/img/ccna.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 13.1286; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl" data-swiper-slide-index="6" role="group" aria-label="7 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -1575.39px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -15; margin-right: 40px;">
-              <img class="rounded-md" src="dist/img/aws.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 15.7539; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl" data-swiper-slide-index="7" role="group" aria-label="8 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -1837.92px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -17; margin-right: 40px;">
-              <img class="rounded-2xl" src="dist/img/azure.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 18.3792; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl" data-swiper-slide-index="8" role="group" aria-label="9 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -2100.45px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -20; margin-right: 40px;">
-              <img class="rounded-2xl" src="dist/img/psd.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 21.0045; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl swiper-slide-duplicate-prev" data-swiper-slide-index="9" role="group"
-              aria-label="10 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -2362.98px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -23; margin-right: 40px;">
-              <img class="rounded-2xl" src="dist/img/mos.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 23.6298; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl swiper-slide-duplicate swiper-slide-duplicate-active"
-              data-swiper-slide-index="0" role="group" aria-label="1 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -2625.51px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -25; margin-right: 40px;">
-              <img class="rounded-md" src="dist/img/mta.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 26.2551; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl swiper-slide-duplicate swiper-slide-duplicate-next"
-              data-swiper-slide-index="1" role="group" aria-label="2 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -2888.03px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -28; margin-right: 40px;">
-              <img class="rounded-md" src="dist/img/BNSP.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 28.8803; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="2" role="group"
-              aria-label="3 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -3150.56px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -31; margin-right: 40px;">
-              <img class="rounded-2xl" src="dist/img/mce.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 31.5056; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="3" role="group"
-              aria-label="4 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -3413.09px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -33; margin-right: 40px;">
-              <img class="rounded-md" src="dist/img/python.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 34.1309; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="4" role="group"
-              aria-label="5 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -3675.62px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -36; margin-right: 40px;">
-              <img class="rounded-md" src="dist/img/mtcre.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 36.7562; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="5" role="group"
-              aria-label="6 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -3938.15px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -38; margin-right: 40px;">
-              <img class="rounded-md" src="dist/img/ccna.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 39.3815; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="6" role="group"
-              aria-label="7 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -4200.68px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -41; margin-right: 40px;">
-              <img class="rounded-md" src="dist/img/aws.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 42.0068; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="7" role="group"
-              aria-label="8 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -4463.21px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -44; margin-right: 40px;">
-              <img class="rounded-2xl" src="dist/img/azure.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 44.6321; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="8" role="group"
-              aria-label="9 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -4725.74px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -46; margin-right: 40px;">
-              <img class="rounded-2xl" src="dist/img/psd.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 47.2574; transition-duration: 0ms;"></div>
-            </div>
-            <div class="swiper-slide rounded-2xl swiper-slide-duplicate" data-swiper-slide-index="9" role="group"
-              aria-label="10 / 10"
-              style="transition-duration: 0ms; transform: translate3d(0px, 0px, -4988.26px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -49; margin-right: 40px;">
-              <img class="rounded-2xl" src="dist/img/mos.png" alt="">
-              <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
-              <div class="swiper-slide-shadow-right" style="opacity: 49.8826; transition-duration: 0ms;"></div>
-            </div>
-          </div>
-          <div
-            class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
-            <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
-              aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0"
-              role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0"
-              role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0"
-              role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0"
-              role="button" aria-label="Go to slide 5"></span><span class="swiper-pagination-bullet" tabindex="0"
-              role="button" aria-label="Go to slide 6"></span><span class="swiper-pagination-bullet" tabindex="0"
-              role="button" aria-label="Go to slide 7"></span><span class="swiper-pagination-bullet" tabindex="0"
-              role="button" aria-label="Go to slide 8"></span><span class="swiper-pagination-bullet" tabindex="0"
-              role="button" aria-label="Go to slide 9"></span><span class="swiper-pagination-bullet" tabindex="0"
-              role="button" aria-label="Go to slide 10"></span></div>
-          <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+        <div class="mt-8 text-center lg:text-left lg:mt-16">
+          <button type="button" class="px-6 py-2 border border-indigo-800 text-indigo-800 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+            <a href="pengajar.html">Info Selengkapnya -></a>
+          </button>
         </div>
       </div>
-
-
-
     </section>
 
     <!-- FASILITAS -->
-    <section id="skill" class="pt-24 m-12">
+    <section id="fasilitas" class="pt-24 m-12">
       <div class="bg-purple py-12 max-w-screen-xl mx-auto grid grid-cols-6 lg:grid lg:grid-cols-12 rounded-2xl px-6 lg:px-12 lg:gap-12">
       <div class="col-span-12 text-center text-white mb-3">
         <h2 class="text-2xl font-bold mb-3">Fasilitas yang Mendukung</h2>
@@ -883,9 +892,9 @@
     <!-- BIAYA KULIAH TRPL -->
     <section id="beasiswa" class="pt-24 px-12 lg:px-40 max-w-screen-xl mx-auto lg:grid lg:grid-cols-12 lg:gap-12 ">
       <div class="col-span-12 md:col-span-6">
-        <h2 class="text-3xl font-bold text-indigo-800">Semua Bisa Kuliah <span class="text-orange">Sarjana
+        <h2 class="text-center lg:text-left text-3xl font-bold text-indigo-800">Semua Bisa Kuliah <span class="text-orange">Sarjana
             Terapan</span> TRPL</h2>
-        <h1 class="text-2xl font-bold my-5 text-indigo-800">Banyak Beasiswa Prestasi dan Kurang Mampu</h1>
+        <h1 class="text-center lg:text-left text-2xl font-bold my-5 text-indigo-800">Banyak Beasiswa Prestasi dan Kurang Mampu</h1>
         <p class="font-thin text-gray-600 leading-loose">Universitas Pendidikan Ganesha menyediakan berbagai jenis
           beasiswa bagi mahasiswa berprestasi maupun mahasiswa kurang mampu yang bersumber dari Undiksha, instansi
           pemerintah maupun institusi non-pemerintah. Pengelolaan, pendaftaran, dan
